@@ -1,0 +1,15 @@
+/*
+ Types of Selectors
+ - h1 (element tag name selector)
+ -#id-name (id selector)
+ - .class-name (class selector)
+*/
+
+h1 {
+    font-style: italic;
+}
+
+#site-name {
+    font-weight: normal;
+}
+
