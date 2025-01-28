@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+</head>
+<body>
+    <header> 
+        <h1><a href="#">Fake Store</a></h1>
+        <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Checkout Order #1234 - Billing and Payment</h2>
+    <p>Order Total: $129.57</p>
+
+    <div>
+        <fieldset>
+        <h3>Billing information</h3>
+        <form method="post">
+            <div>
+                <label>First Name:</label>
+                <input type="text" id="fn" name="fname" placeholder="John">
+                <label>Last Name:</label>
+                <input type="text" id="ln" name="lname" placeholder="Doe">
+            </div>
+            <div>
+                <label>Address:</label>
+                <input type="text" id="add" name="address" placeholder="123 Fake Street">
+            </div>
+            <div>
+                <label>City:</label>
+                <input type="text" id="ct" name="city" placeholder="Toronto">
+                <label>Province:</label>
+                <select id="province" name="province">
+                    <option disabled selected>-- Choose province -- </option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="ON">Ontario</option>
+                    <option value="QC">Quebec</option>
+                </select>
+                <label>Postal Code:</label>
+                <input type="text" id="pc" name="Postal" placeholder="A1A 1A1">
+            </div>
+            <div>
+            <label>Phone Number:</label>
+                <input type="tel" id="phone" name="phonenumber" placeholder="555-555-5555">
+            </div>
+        </form>
+    </fieldset>
+    </div>
+    <div>
+        <fieldset>
+        <h3>Payment Information</h3>
+        <form method="get">
+            <div>
+                <fieldset>
+                    <div>
+                        <legend>Choose One</legend>
+                        <input type="radio" id="Visa" name="Card" value="Visa" checked>
+                        <label for="Visa">Visa</label>
+                    </div>
+                        <div>
+                        <input type="radio" id="Master" name="Card" value="Master">
+                        <label for="Visa">Master Card</label>
+                    </div>
+                </fieldset>
+                    <div>
+                        <label>Card Number:</label>
+                <input type="number" id="Cardno" name="CardNum" placeholder="1234 1234 1234 1234">
+                    </div>
+                    <div>
+                        <label>Card Expiry:</label>
+                <input type="number" id="CardEx" name="CardExp" placeholder="MM/YY">
+                    </div>
+               <button type="submit">Pay Now</button>
+            </div>
+        </form>
+    </fieldset>
+    </div>
+    <footer>
+        <p>&copy; Copyright HTTP51, 2024.</p>
+      </footer>
+</body>
+</html>
