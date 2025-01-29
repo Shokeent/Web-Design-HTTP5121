@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+
+}
+
+h1, h2 {
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a:link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6f42c1;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.link {
+  background-color: #e588ed;
+}
+
+
+#main {
+  padding: 2em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+
+#footer {
+  background-color: #ebebec;
+  border-top: 5px solid cyan;
+  text-align: center;
+}
+
+#footer h2 {
+  color: #444;
+}
+
+form {
+  margin-top: 1em;
+}
+
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#author {
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+
+#comments {
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+
+
+ul {
+  padding-left: 1.5em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
