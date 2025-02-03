@@ -1,0 +1,108 @@
+/*
+  Types of selectors:
+  - h1 (element tag name selector)
+  - #id-name (id selector)
+  - .class-name (class selector)
+*/
+body {
+  font:normal 1em/1.25 Arial,Helvetica,sans-serif;
+  /* font-size:1em; */ /* 16px is the default browser size in most cases. Here, 1em = 16px * 1 */
+  /* font-family:Arial, Helvetica, sans-serif; */ /* This is a standard font stack. Start with your desired font, then list your fallback fonts after. Always end with the generic no-name font (sans-serif, serif, decorative). */
+  /* line-height:1.25; */
+  margin:0; /* remove small gap all around the page */
+}
+#page-title {
+  font-style:normal;
+}
+h1 {
+  font-style:italic;
+}
+
+/* :link is a pseudo-class. Pseudo-classes are used to select an element which is in a particular state. */
+/* Link-related pseudo-classes are:
+ :link (currently a link)
+ :visited (a link which has been clicked on before or has an href which matches a URL that has been visited before)
+ :hover (something being hovered over by the cursor)
+ :active (currently has mousedown but before mouseup)
+*/
+a:link {
+  color:red;
+}
+a:visited {
+  color:purple;
+}
+a:hover {
+  color:#000; /* if all 6 hex digits are the same, you can shorten it to 3 digits */
+}
+a:active {
+  color:green;
+}
+a.button, .button {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:0.5em 0.8em; /* equivalent to 0.5em 0.8em 0.5em 0.8em */
+  border-radius:0.5em;
+  /* border-radius:0 5px 10px 15px; */
+  /* border-radius:0 10px 20px; */
+}
+a.button:hover, .button {
+  background-color:red;
+  display:inline-block;
+  text-align:center;
+}
+.small {
+  font-size:0.9em;
+}
+#header, #footer {
+  background-color:#ebebec;
+  padding:1em;
+}
+#header {
+  border-bottom:2px solid red; /* <border-width> <border-style> <border-color> */
+}
+#footer {
+  border-top:1px solid red;
+}
+#site-name {
+  font-weight:normal; /* not bolded */
+  letter-spacing:5px; /* adjust kerning (spacing between characters) */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* for font names with spaces, enclose the font name with quotes */
+  margin-top:0;
+}
+/* You can use a comma to separate selectors when you're selecting multiple things to style. Here, I'm selecting the site name link (in general) and the visited site name link. */
+#site-name a,
+#site-name a:visited {
+  color:red;
+  text-decoration:none; /* remove any underline or overline */
+}
+.menu {
+  padding:0; /* padding: 0 is short for padding: 0 0 0 0. padding can take four values. Syntax is padding: <padding-top> <padding-right> <padding-bottom> <padding-left>. */
+  margin-bottom:0;
+}
+/* A space between selectors means you're selecting a descendant (li, here). Below, we're selecting all li elements which are descendants of an element with class="menu" */
+.menu li {
+  display:inline;
+  margin-right:2em;
+}
+.menu a,
+.menu a:visited {
+  color:red;
+  text-decoration:none;
+}
+.menu a:hover {
+  color:#000;
+}
+#footer .menu {
+  margin-top:0;
+}
+#copyright {
+  font-size:0.8em;
+  margin-bottom:0;
+}
+#sidebar {
+  font-size:0.8em; /* 0.8em * 16px = 12.8px */
+}
+#sidebar h2 {
+  font-size:1.2em;
+}
